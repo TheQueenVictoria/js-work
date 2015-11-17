@@ -1,0 +1,30 @@
+html, body{
+  height:100%;
+}
+
+body {
+    margin:0px;
+}
+
+#clock {
+    
+}
+
+.box {
+    min-width: 50%;
+    max-height: 50%;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-family: courier, monospace;
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    background-color: #80d4ea;
+    float: left;
+    display:block;
+}
+
+.world-clocks {
+    height: 100%;
+
+}
