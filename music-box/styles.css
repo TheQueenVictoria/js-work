@@ -24,6 +24,10 @@ body {
 #c {
     background-color: #3e181b;
     border: 3px solid #db1d2d;
+    color:#db1d2d;
+    font-size: 1.5em;
+    line-height: 3.8em;
+    text-align: center;
 	}
 #c:hover {
     background-color:#661920;
@@ -38,6 +42,10 @@ body {
 #d {
     background-color: #422018;
     border: 3px solid #f0421c;
+    color:#f0421c;
+    font-size: 1.5em;
+    line-height: 3.8em;
+    text-align: center;
 	}
 
 #d:hover {
@@ -54,6 +62,11 @@ body {
 #e {
     background-color: #45391b;
     border: 3px solid #fec02d;
+    color:#fec02d;
+    font-size: 1.5em;
+    line-height: 3.8em;
+    text-align: center;
+
 	}
 
 #e:hover {
@@ -69,7 +82,12 @@ body {
 #f {
     background-color: #193c29;
     border: 3px solid #20d071;
+    color:#20d071;
+    font-size: 1.5em;
+    line-height: 3.8em;
+    text-align: center;
 	}
+
 #f:hover {
     background-color:#1b613b;
     cursor: pointer;
@@ -82,6 +100,10 @@ body {
 #g {
     background-color: #18323e;
     border: 3px solid #1a9ddb;
+    color:#1a9ddb;
+    font-size: 1.5em;
+    line-height: 3.7em;
+    text-align: center;
 	}
 #g:hover {
     background-color:#184d65;
@@ -96,7 +118,11 @@ body {
 #a {
     background-color: #331f35;
     border: 3px solid #a13fad;
-} 
+    color:#a13fad;
+    font-size: 1.5em;
+    line-height: 3.7em;
+    text-align: center;
+	} 
 #a:hover {
     background-color:#4e2753;
     cursor: pointer;
@@ -109,7 +135,12 @@ body {
 #b {
     background-color: #43293d;
     border: 3px solid #f26fd4;
-}
+    color:#f26fd4;
+    font-size: 1.5em;
+    line-height: 3.7em;
+    text-align: center;
+	}
+	
 #b:hover {
     background-color:#6f3a62;
     cursor: pointer;
