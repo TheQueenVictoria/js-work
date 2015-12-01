@@ -1,0 +1,24 @@
+body {
+	font-family: arial;
+}
+
+h2 {
+	    font-size: 1.3em;
+}
+
+h3 {
+	margin-bottom: 0px;
+}
+
+h3, p {
+    font-family: arial;
+    color: #565656;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0px;
+}
+
+
+.hours {
+	padding: 25px;
+}
