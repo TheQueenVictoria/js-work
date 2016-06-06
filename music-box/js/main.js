@@ -4,7 +4,6 @@ $(document).ready(function() {
     $('#c').mousedown(function(){
 		cNote.currentTime = 0;
 		cNote.play();
-		cNote.animateCss('bounce');
 	});
 	
 	/*$('#c').mouseover(function(){

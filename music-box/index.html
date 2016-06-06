@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Basic Tunes to Pass the Time</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic Tunes to Pass the Time</title>
 
-	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" href="css/animate.css">
+		<!-- viewports -->
+		<meta name="viewport" content="initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 
-	<!-- fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="css/animate.css">
 
-	<!-- scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+		<!-- fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<!-- scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
-</head>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-<body>
-	<audio id="aAudio">
-		<source src="media/a_note.mp3" type="audio/mpeg"></source>
-		<source src="media/a_note.ogg" type="audio/ogg"></source>
-		<source src="media/a_note.wav" type="audio/wav"></source>
-	</audio>
+	</head>
 
-	<audio id="bAudio">	
-		<source src="media/b_note.mp3" type="audio/mpeg"></source>
-		<source src="media/b_note.ogg" type="audio/ogg"></source>
-		<source src="media/b_note.wav" type="audio/wav"></source>
-	</audio>
+	<body>
+		<audio id="aAudio">
+			<source src="media/a_note.mp3" type="audio/mpeg"></source>
+			<source src="media/a_note.ogg" type="audio/ogg"></source>
+			<source src="media/a_note.wav" type="audio/wav"></source>
+		</audio>
 
-	<audio id="cAudio">
-		<source src="media/c_note.mp3" type="audio/mpeg"></source>
-		<source src="media/c_note.ogg" type="audio/ogg"></source>
-		<source src="media/c_note.wav" type="audio/wav"></source>
-	</audio>
+		<audio id="bAudio">	
+			<source src="media/b_note.mp3" type="audio/mpeg"></source>
+			<source src="media/b_note.ogg" type="audio/ogg"></source>
+			<source src="media/b_note.wav" type="audio/wav"></source>
+		</audio>
 
-	<audio id="dAudio">
-		<source src="media/d_note.mp3" type="audio/mpeg"></source>
-		<source src="media/d_note.ogg" type="audio/ogg"></source>
-		<source src="media/d_note.wav" type="audio/wav"></source>
-	</audio>
-	<audio id="eAudio">
-		<source src="media/e_note.mp3" type="audio/mpeg"></source>
-		<source src="media/e_note.ogg" type="audio/ogg"></source>
-		<source src="media/e_note.wav" type="audio/wav"></source>
-	</audio>
-	<audio id="fAudio">
-		<source src="media/f_note.mp3" type="audio/mpeg"></source>
-		<source src="media/f_note.ogg" type="audio/ogg"></source>
-		<source src="media/f_note.wav" type="audio/wav"></source>
-	</audio>
-	<audio id="gAudio">	
-		<source src="media/g_note.mp3" type="audio/mpeg"></source>
-		<source src="media/g_note.ogg" type="audio/ogg"></source>
-		<source src="media/g_note.wav" type="audio/wav"></source>	
-	</audio>
+		<audio id="cAudio">
+			<source src="media/c_note.mp3" type="audio/mpeg"></source>
+			<source src="media/c_note.ogg" type="audio/ogg"></source>
+			<source src="media/c_note.wav" type="audio/wav"></source>
+		</audio>
 
-	<header>
-		<h1 class="animated pulse">Play a little tune!</h1>
-	</header>
+		<audio id="dAudio">
+			<source src="media/d_note.mp3" type="audio/mpeg"></source>
+			<source src="media/d_note.ogg" type="audio/ogg"></source>
+			<source src="media/d_note.wav" type="audio/wav"></source>
+		</audio>
+		<audio id="eAudio">
+			<source src="media/e_note.mp3" type="audio/mpeg"></source>
+			<source src="media/e_note.ogg" type="audio/ogg"></source>
+			<source src="media/e_note.wav" type="audio/wav"></source>
+		</audio>
+		<audio id="fAudio">
+			<source src="media/f_note.mp3" type="audio/mpeg"></source>
+			<source src="media/f_note.ogg" type="audio/ogg"></source>
+			<source src="media/f_note.wav" type="audio/wav"></source>
+		</audio>
+		<audio id="gAudio">	
+			<source src="media/g_note.mp3" type="audio/mpeg"></source>
+			<source src="media/g_note.ogg" type="audio/ogg"></source>
+			<source src="media/g_note.wav" type="audio/wav"></source>	
+		</audio>
 
-	<section class="cf">
-		<div id="instrument">
-			<div id="c" class="box animated pulse noselect">c</div>
-			<div id="d" class="box animated pulse noselect">d</div>
-			<div id="e" class="box animated pulse noselect">e</div>
-			<div id="f" class="box animated pulse noselect">f</div>
-			<div id="g" class="box animated pulse noselect">g</div>
-			<div id="a" class="box animated pulse noselect">a</div>
-			<div id="b" class="box animated pulse noselect">b</div>	
-		</div>
-	</section>
+		<header>
+			<h1 class="animated pulse">Play a little tune!</h1>
+		</header>
 
-<!-- song you can play -->
-	<section class="songs">
-		<ul class="tabs">
-			<li class="tab-link current" data-tab="tab-1">Mary Had A Little Lamb</li>
-			<li class="tab-link" data-tab="tab-2">London Bridge</li>
-			<li class="tab-link" data-tab="tab-3">Twinkle, Twinkle Little Star</li>
-		</ul>
+		<section class="cf">
+			<div id="instrument">
+				<div id="c" class="box animated pulse noselect">c</div>
+				<div id="d" class="box animated pulse noselect">d</div>
+				<div id="e" class="box animated pulse noselect">e</div>
+				<div id="f" class="box animated pulse noselect">f</div>
+				<div id="g" class="box animated pulse noselect">g</div>
+				<div id="a" class="box animated pulse noselect">a</div>
+				<div id="b" class="box animated pulse noselect">b</div>	
+			</div>
+		</section>
 
-		<div id="tab-1" class="tab-content current">
-			<p>E-D-C-D-E-E-E <strong>D-D-D-E-E-E</strong> E-D-C-D-E-E-E <strong>E-D-D-E-D-C</strong></p>
-		</div>
-		<div id="tab-2" class="tab-content">
-			 <p>G-A-G-F-E-F-G <strong>D-E-F-E-F-G</strong> G-A-G-F-E-F-G <strong>D-G-E-C</strong></p>
-		</div>
-		<div id="tab-3" class="tab-content">
-			<p>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong> G-G-F-F-E-E-D <strong>G-G-F-F-E-E-D</strong> <br>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong></p>
-		</div>
-	</section>
+	<!-- song you can play -->
+		<section class="songs">
+			<ul class="tabs">
+				<li class="tab-link current" data-tab="tab-1">Mary Had A Little Lamb</li>
+				<li class="tab-link" data-tab="tab-2">London Bridge</li>
+				<li class="tab-link" data-tab="tab-3">Twinkle, Twinkle Little Star</li>
+			</ul>
 
+			<div id="tab-1" class="tab-content current">
+				<p>E-D-C-D-E-E-E <strong>D-D-D-E-E-E</strong> E-D-C-D-E-E-E <strong>E-D-D-E-D-C</strong></p>
+			</div>
+			<div id="tab-2" class="tab-content">
+				 <p>G-A-G-F-E-F-G <strong>D-E-F-E-F-G</strong> G-A-G-F-E-F-G <strong>D-G-E-C</strong></p>
+			</div>
+			<div id="tab-3" class="tab-content">
+				<p>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong> G-G-F-F-E-E-D <strong>G-G-F-F-E-E-D</strong> <br>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong></p>
+			</div>
+		</section>
 
-</body>
+	</body>
 </html>

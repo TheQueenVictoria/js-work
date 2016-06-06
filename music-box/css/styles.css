@@ -95,15 +95,6 @@ ul.tabs li.current{
     top: 0; left: 0; bottom: 0; right: 0;
     }
 
-@media(max-width:480px) {
-
-    #instrument {
-       margin-top:0px; 
-       position: relative;
-       max-width: 100%;
-    }
-}
-
 .box {
     width: 100px;
     height: 300px;
@@ -241,5 +232,29 @@ ul.tabs li.current{
                                   not supported by any browser */
 }
 
+/* mobile 480px width adjustments*/
+
+@media(max-width:480px) {
+
+    #instrument {
+       margin-top:0px; 
+       position: relative;
+       max-width: 100%;
+    }
+
+    header h1{ 
+        font-size: 1.4em;
+    }
+    /* all notes */
+    #c, #d, #e, #f, #g, #a, #b {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+    }
+}
 
 
