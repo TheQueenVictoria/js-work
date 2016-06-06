@@ -253,7 +253,7 @@ ul.tabs li.current{
     /* all notes */
     #c, #d, #e, #f, #g, #a, #b {
         font-size: 1.5em;
-        line-height: 1.5em;
+        line-height: 1.9em;
     }
 
     .box {
@@ -263,6 +263,26 @@ ul.tabs li.current{
 
     .songs {
         padding: 20px 0px;
+    }
+
+    .songs p {
+    font-size: 1em;
+    }
+
+    ul.tabs {
+        padding: 0px 0px 10px;
+    }
+
+    ul.tabs li {
+        padding: 5px 5px;
+    }
+    .tab-content {
+        padding: 0px;
+        border-top: 1px solid #CACACA;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 0px;
+        border-radius: 0px;
     }
 }
 
