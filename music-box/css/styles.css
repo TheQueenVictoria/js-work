@@ -234,7 +234,7 @@ ul.tabs li.current{
 
 /* mobile 480px width adjustments*/
 
-@media(max-width:480px) {
+@media(max-width:720px) {
 
     #instrument {
        margin-top:0px; 
@@ -242,9 +242,14 @@ ul.tabs li.current{
        max-width: 100%;
     }
 
+    header {
+        padding: 20px 0px 20px;
+    }
+
     header h1{ 
         font-size: 1.4em;
     }
+    
     /* all notes */
     #c, #d, #e, #f, #g, #a, #b {
         font-size: 1.5em;
@@ -254,6 +259,10 @@ ul.tabs li.current{
     .box {
         width: 40px;
         height: 40px;
+    }
+
+    .songs {
+        padding: 20px 0px;
     }
 }
 
