@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Music Notes with JS</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="animate.css">
+	<title>Basic Tunes to Pass the Time</title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
+	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-	
+	<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
+
 <body>
 	<audio id="aAudio">
 		<source src="media/a_note.mp3" type="audio/mpeg"></source>
@@ -50,28 +57,40 @@
 		<source src="media/g_note.wav" type="audio/wav"></source>	
 	</audio>
 
-
-
-	<div id="instrument">
-		<header>
-		<h1>Play a little tune!</h1>
-		<p>Mary Had A Little Lamb: <span class="notes">
-			<br>B-A-G-A-B-B-B <br>A-A-A-B-D-D <br>
-		B-A-G-A-B-B-B <br>
-		B-A-A-B-A-G</p>
-		</span>
-		
+	<header>
+		<h1 class="animated pulse">Play a little tune!</h1>
 	</header>
-		<div id="c" class="box animated pulse">c</div>
-		<div id="d" class="box animated pulse">d</div>
-		<div id="e" class="box animated pulse">e</div>
-		<div id="f" class="box animated pulse">f</div>
-		<div id="g" class="box animated pulse">g</div>
-		<div id="a" class="box animated pulse">a</div>
-		<div id="b" class="box animated pulse">b</div>	
-	</div>
 
+	<section class="cf">
+		<div id="instrument">
+			<div id="c" class="box animated pulse noselect">c</div>
+			<div id="d" class="box animated pulse noselect">d</div>
+			<div id="e" class="box animated pulse noselect">e</div>
+			<div id="f" class="box animated pulse noselect">f</div>
+			<div id="g" class="box animated pulse noselect">g</div>
+			<div id="a" class="box animated pulse noselect">a</div>
+			<div id="b" class="box animated pulse noselect">b</div>	
+		</div>
+	</section>
 
+<!-- song you can play -->
+	<section class="songs">
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="tab-1">Mary Had A Little Lamb</li>
+			<li class="tab-link" data-tab="tab-2">London Bridge</li>
+			<li class="tab-link" data-tab="tab-3">Twinkle, Twinkle Little Star</li>
+		</ul>
+
+		<div id="tab-1" class="tab-content current">
+			<p>E-D-C-D-E-E-E <strong>D-D-D-E-E-E</strong> E-D-C-D-E-E-E <strong>E-D-D-E-D-C</strong></p>
+		</div>
+		<div id="tab-2" class="tab-content">
+			 <p>G-A-G-F-E-F-G <strong>D-E-F-E-F-G</strong> G-A-G-F-E-F-G <strong>D-G-E-C</strong></p>
+		</div>
+		<div id="tab-3" class="tab-content">
+			<p>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong> G-G-F-F-E-E-D <strong>G-G-F-F-E-E-D</strong> <br>C-C-G-G-A-A-G <strong>F-F-E-E-D-D-C</strong></p>
+		</div>
+	</section>
 
 
 </body>

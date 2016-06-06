@@ -1,0 +1,245 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Utilities */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    /*background-color:black;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    padding: 50px 0px 20px;
+    text-align: center;
+    }
+
+header h1{
+    font-weight: lighter;
+    line-height: 1.6em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 3em;
+    }
+
+
+/* songs in tabs */
+.songs {
+    padding: 70px 0px;
+    margin: 0 auto;
+    font-weight: lighter;
+    max-width: 812px;
+    text-align: center;
+    }   
+
+.songs p{
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    }
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    }
+
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8em;
+    color:#737373;
+    }
+
+ul.tabs li.current{
+    color: #222;
+    font-weight: bold;
+    }
+
+.tab-content{
+    display: none;
+    /*background: #ededed;*/
+    padding: 15px;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    }
+
+.tab-content.current{
+    display: inherit;
+    }
+
+
+
+#instrument {
+    max-height: 580px;
+    max-width: 812px;
+    padding-right: 10px;
+    margin: auto;
+    /*position: absolute;*/
+    top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+@media(max-width:480px) {
+
+    #instrument {
+       margin-top:0px; 
+       position: relative;
+       max-width: 100%;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    }
+
+/* all notes */
+#c, #d, #e, #f, #g, #a, #b {
+    font-size: 4em;
+    line-height: 8em;
+    text-align: center;
+    }
+
+/* c note */
+#c {
+    background-color: #3e181b;
+    border: 3px solid #db1d2d;
+    color:#db1d2d;
+    }
+#c:hover {
+    background-color:#661920;
+    cursor: pointer;
+    }
+#c:active {
+    background-color:#db1d2d;
+    }   
+
+
+/* d note */
+#d {
+    background-color: #422018;
+    border: 3px solid #f0421c;
+    color:#f0421c;
+    }
+
+#d:hover {
+    background-color:#6e2819;
+    cursor: pointer;
+    }
+
+#d:active {
+    background-color:#f0421c;
+    }
+
+
+/* e note */
+#e {
+    background-color: #45391b;
+    border: 3px solid #fec02d;
+    color:#fec02d;
+    }
+
+#e:hover {
+    background-color:#735b20;
+    cursor: pointer;
+    }
+
+#e:active {
+    background-color:#fec02d;
+    }   
+
+/* f note */
+#f {
+    background-color: #193c29;
+    border: 3px solid #20d071;
+    color:#20d071;
+    }
+
+#f:hover {
+    background-color:#1b613b;
+    cursor: pointer;
+    }
+#f:active {
+    background-color:#20d071;
+    }   
+
+/* g note */
+#g {
+    background-color: #18323e;
+    border: 3px solid #1a9ddb;
+    color:#1a9ddb;
+    }
+#g:hover {
+    background-color:#184d65;
+    cursor: pointer;
+    }
+#g:active {
+    background-color:#1a9ddb;
+    }
+
+
+/* a note */
+#a {
+    background-color: #331f35;
+    border: 3px solid #a13fad;
+    color:#a13fad;
+    } 
+#a:hover {
+    background-color:#4e2753;
+    cursor: pointer;
+    }
+#a:active {
+    background-color:#a13fad;
+    }   
+
+/* b note */
+#b {
+    background-color: #43293d;
+    border: 3px solid #f26fd4;
+    color:#f26fd4;
+    }
+    
+#b:hover {
+    background-color:#6f3a62;
+    cursor: pointer;
+    }
+
+#b:active {
+    background-color:#f26fd4;
+    }
+
+/* Stops text select on the notes*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+
+
